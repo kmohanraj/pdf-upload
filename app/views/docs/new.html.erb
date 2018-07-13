@@ -1,0 +1,12 @@
+<h1>Docs#new</h1>
+<%#= render "docs/form"%>
+
+<div class = "well">
+   <%= form_for @doc, html: { multipart: true } do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :attachement %>
+      <%= f.file_field :attachement %>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+   <% end %>
+</div>

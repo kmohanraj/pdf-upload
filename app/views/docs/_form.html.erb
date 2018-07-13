@@ -1,0 +1,14 @@
+<%= form_for @doc do |s|%>
+
+<fieldset>
+	<%= s.label :title, "Title"%>
+	<%= s.text_field :title%>
+</fieldset>
+
+<fieldset>
+	<%= s.label :attachement,"Attachement"%>
+	<%= s.file_field :attachement%>
+</fieldset>
+
+	<%= s.submit "create"%>
+<% end %>
